@@ -109,3 +109,17 @@ Windows
 | Brama         | 192.168.0.1         | default from ipconfig /all |
 | DNS 1         | 62.179.1.62      | default from ipconfig /all     |
 | DNS 2         | 62.179.1.63          | default from ipconfig /all   |
+
+2. 
+* Piotr-OnePlus
+
+| Parametr | wartość           | 
+| ------------- |:-------------:|
+| Adres IP      | 192.168.0.178        |
+| Maska podsieci| 255.255.255.0 |
+| Brama         | 192.168.0.1         |
+| DNS 1         | 62.179.1.62      |
+| DNS 2         | 62.179.1.63          |
+
+3. Zrobione
+4. ![my network](schemat.png)
