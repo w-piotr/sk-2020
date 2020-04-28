@@ -67,3 +67,45 @@ aby załączyć obrazek
 
 ![my network](network.png)
 
+
+### Odpowiedzi
+
+1.
+Alpine
+| Parametr | wartość           | komentarzu |
+| ------------- |:-------------:| -----:|
+| Adres IP      | 10.0.2.15        | przydzielony przez DHCP |
+| Maska podsieci| 10.0.2.15/24 | **255.255.255.0**    |
+| Brama         | 10.0.2.2         | default from route table |
+| DNS 1         | 62.179.1.62      | cat /etc/resolv.conf     |
+| DNS 2         | 62.179.1.63          | nslookup uek.krakow.pl   |
+
+
+Centos
+| Parametr | wartość           | komentarzu |
+| ------------- |:-------------:| -----:|
+| Adres IP      | 10.0.2.15        | przydzielony przez DHCP |
+| Maska podsieci| 10.0.2.15/24 | **255.255.255.0**    |
+| Brama         | 10.0.2.2         | default from route table |
+| DNS 1         | 62.179.1.62      | cat /etc/resolv.conf     |
+| DNS 2         | 62.179.1.63          | nslookup uek.krakow.pl   |
+
+
+Debian
+| Parametr | wartość           | komentarzu |
+| ------------- |:-------------:| -----:|
+| Adres IP      | 192.168.0.241        | przydzielony przez DHCP |
+| Maska podsieci| 10.0.2.15/24 | **255.255.255.0**    |
+| Brama         | 10.0.2.2         | default from route table |
+| DNS 1         | 62.179.1.62      | cat /etc/resolv.conf     |
+| DNS 2         | 62.179.1.63          | nslookup uek.krakow.pl   |
+
+
+Windows
+| Parametr | wartość           | komentarzu |
+| ------------- |:-------------:| -----:|
+| Adres IP      | 192.168.0.241        | DHCP disabled |
+| Maska podsieci| 255.255.255.0 | **255.255.255.0**    |
+| Brama         | 192.168.0.1         | default from ipconfig /all |
+| DNS 1         | 62.179.1.62      | default from ipconfig /all     |
+| DNS 2         | 62.179.1.63          | default from ipconfig /all   |
