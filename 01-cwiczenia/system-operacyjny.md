@@ -81,24 +81,11 @@ Alpine
 | DNS 2         | 62.179.1.63          | nslookup uek.krakow.pl   |
 
 
-Centos
-| Parametr | wartość           | komentarzu |
-| ------------- |:-------------:| -----:|
-| Adres IP      | 10.0.2.15        | przydzielony przez DHCP |
-| Maska podsieci| 10.0.2.15/24 | **255.255.255.0**    |
-| Brama         | 10.0.2.2         | default from route table |
-| DNS 1         | 62.179.1.62      | cat /etc/resolv.conf     |
-| DNS 2         | 62.179.1.63          | nslookup uek.krakow.pl   |
+Centos - mam problem z instalacją graficzną linuxa bo mój virtual box się nie chce skalować i obcina mi przyciski 
 
+Debian - próbowałem instalować ale potem maszyna się nie uruchamiała
 
-Debian
-| Parametr | wartość           | komentarzu |
-| ------------- |:-------------:| -----:|
-| Adres IP      | 192.168.0.241        | przydzielony przez DHCP |
-| Maska podsieci| 10.0.2.15/24 | **255.255.255.0**    |
-| Brama         | 10.0.2.2         | default from route table |
-| DNS 1         | 62.179.1.62      | cat /etc/resolv.conf     |
-| DNS 2         | 62.179.1.63          | nslookup uek.krakow.pl   |
+Ubuntu - mam problem z instalacją graficzną linuxa bo mój virtual box się nie chce skalować i obcina mi przyciski 
 
 
 Windows
@@ -121,5 +108,6 @@ Windows
 | DNS 1         | 62.179.1.62      |
 | DNS 2         | 62.179.1.63          |
 
-3. Zrobione
-4. ![my network](schemat.png)
+3. Założone
+4. Podstawowa znajomość może mi się przydać, ale nie zamierzam się tym zajmować zawodowo.
+![my network](schemat.png)
