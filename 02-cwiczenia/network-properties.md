@@ -30,10 +30,12 @@ Weryfikacja połączenia
 
 Polecenie
 ```
+ping 10.0.15.4 (z PC2) / ping 10.0.15.6 (z PC1)
 ```
 
 Efekt
 ```
+polecenie wyświetla ping
 ```
 
 Statyczna konfiguracja parametrów połączenia
@@ -56,10 +58,12 @@ Weryfikacja połączenia
 
 Polecenie
 ```
+ping 192.168.10.10 (z PC2) / ping 192.168.10.11 (z PC1) / ping 172.16.100.100 (z PC1)
 ```
 
 Efekt
 ```
+działa / działa / nie działa
 ```
 
 Nowa statyczna konfiguracja 
@@ -68,26 +72,34 @@ Nowa statyczna konfiguracja
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 |  
-| IP - address  |  | |
-| MASKA  |  | |
+| IP - address  | 170.245.14.10 | |
+| MASKA  | 255.255.255.0 | |
 |   |  | |
 | PC 2  |  | |
-| IP - address  |  | |
-| MASKA  |  | |
+| IP - address  | 170.245.14.11/24 | |
+| MASKA  | 255.255.255.0 | |
 
 Weryfikacja połączenia
 
 Polecenie
 ```
+należy otworzyć vi etc/network/interfaces i ustawić
+ iface eth0 inet static
+        address 170.245.14.10
+        netmask 255.255.255.0
+ następnie rc-service networking restart żeby przeładować serwis sieci
 ```
 
 Efekt
 ```
+komunikacja działa po restarcie serwisów/maszyny
 ```
 
 ### Utrwalenie konfiguracji
 
 Dlaczego? Jak? Co? :)
+
+Konfiguracja jest utrwalona ponieważ została zapisana w pliku konfiguracyjnym skąd  może zostać załadowna.
 
 ### Warto wiedzieć
 
