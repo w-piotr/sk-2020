@@ -107,8 +107,8 @@ Konfiguracja jest utrwalona ponieważ została zapisana w pliku konfiguracyjnym 
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 | Lokalizacja pliku z konfiguracją sieci| etc/network/interfaces | |
-| UP -> Wyłączenie interfejsu sieciowego| ip link eht[X] up | |
-| DOWN -> Włączenie interfejsu sieciowego| ip link eht[X] down | |
+| UP -> Wyłączenie interfejsu sieciowego| ip link eth[X] up | |
+| DOWN -> Włączenie interfejsu sieciowego| ip link eth[X] down | |
 | Sprawdzenie obecnych parametrów | netstat | |
 | lista wszystkich interfejsów | ip link show | |
 | Które interfejsy jakie porty słuchają | netstat -l | -lt dla portów tcp, -ltpn nazwa programu bez nazw danch protokołów |
