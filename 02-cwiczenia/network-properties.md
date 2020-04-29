@@ -106,10 +106,10 @@ Konfiguracja jest utrwalona ponieważ została zapisana w pliku konfiguracyjnym 
 -------------------------
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
-| Lokalizacja pliku z konfiguracją sieci| | |
-| UP -> Wyłączenie interfejsu sieciowego| | |
-| DOWN -> Włączenie interfejsu sieciowego| | |
-| Sprawdzenie obecnych parametrów | | |
-| lista wszystkich interfejsów | | |
-| Które interfejsy jakie porty słuchają | | |
+| Lokalizacja pliku z konfiguracją sieci| etc/network/interfaces | |
+| UP -> Wyłączenie interfejsu sieciowego| ip link eht[X] up | |
+| DOWN -> Włączenie interfejsu sieciowego| ip link eht[X] down | |
+| Sprawdzenie obecnych parametrów | netstat | |
+| lista wszystkich interfejsów | ip link show | |
+| Które interfejsy jakie porty słuchają | netstat -l | -lt dla portów tcp, -ltpn nazwa programu bez nazw danch protokołów |
 
