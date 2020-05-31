@@ -52,6 +52,7 @@ PC3 ip route add default via 10.0.10.1
 Jeżeli nie działa to znaczy, że nie jest ustawione przekazywanie pakietów.
 Aby to zmienić:
 echo 1 > /proc/sys/net/ipv4/ip_forward
+lub sysctl net.ipv4.ip_forward=1
 
 
 2. Przygotuj konfigurację tak aby została załadowana poprawnie po ponownym uruchomieniu systemu
@@ -59,6 +60,17 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
    * zwróć uwagę na różnice pomiędzy dydtrybucjami systemu
 3. Zainstaluj, uruchom i przetestuj działanie aplikacji ``chat``
    * aplikacja dostępna w serwisie github ``https://github.com/jkanclerz/client-server-chat`` lub preinstalowana na maszynie dostępnej w zasobach kursu
+
+
+Ad.3
+PC1
+cd client-server-chat/
+python3 server.py
+
+
+PC3
+cd client-server-chat/
+python3 client.py 172.16.100.10 9999
 
 ### Zadanie do domu
 
