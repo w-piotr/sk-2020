@@ -34,6 +34,7 @@
    * Dlaczego połączenie może nie działać
    
 Ad.1 
+
 PC1 ip addr add 172.16.100.10/24 dev eth0
 ping 172.16.100.1 - połączenie z routerem działa
 
@@ -43,6 +44,14 @@ ip link set eth1 up
 
 PC3 ip addr add 10.0.10.10/24 dev eth0
 ping 10.0.10.1 - połączenie z routerem działa
+
+PC1 ip route add 10.0.10.0/24 via 172.16.100.1
+
+PC3 ip route add default via 10.0.10.1
+
+Jeżeli nie działa to znaczy, że nie jest ustawione przekazywanie pakietów.
+Aby to zmienić:
+echo 1 > /proc/sys/net/ipv4/ip_forward
 
 
 2. Przygotuj konfigurację tak aby została załadowana poprawnie po ponownym uruchomieniu systemu
