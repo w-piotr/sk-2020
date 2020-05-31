@@ -32,6 +32,19 @@
    * Przygotuj konfigurację sieci zgodnie z powyższym diagramem, 
    * Przetestuj połączenie pomiędzy wszystkimi elementami sieci
    * Dlaczego połączenie może nie działać
+   
+Ad.1 
+PC1 ip addr add 172.16.100.10/24 dev eth0
+ping 172.16.100.1 - połączenie z routerem działa
+
+PC0 ip addr add 172.16.100.1/24 dev eth0
+PC0 ip addr add 10.0.10.1/24 dev eth1
+ip link set eth1 up
+
+PC3 ip addr add 10.0.10.10/24 dev eth0
+ping 10.0.10.1 - połączenie z routerem działa
+
+
 2. Przygotuj konfigurację tak aby została załadowana poprawnie po ponownym uruchomieniu systemu
    * Patrz ``utrwalanie statycznej konfiguracji cwiczenia 2``
    * zwróć uwagę na różnice pomiędzy dydtrybucjami systemu
