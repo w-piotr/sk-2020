@@ -15,15 +15,15 @@ Organizacja planuje rozpoczęcie działalności w 3 budynkach, w każdym z nich 
  * Tablice routingów na poszczególnych routerach
  
  
- #Dokumentacja:
+ # Dokumentacja:
  
- ##LAN 1
+ ## LAN 1
  
  172.17.156.0/22
  
  255.255.252.0
  
- ###Router 1
+ ### Router 1
  
  ethLan: 172.17.156.1 255.255.252.0
  
@@ -38,13 +38,13 @@ Organizacja planuje rozpoczęcie działalności w 3 budynkach, w każdym z nich 
  172.17.12.0/22|10.10.10.6
  
  
- ##LAN 2
+ ## LAN 2
  
  172.17.200.0/22
  
  255.255.252.0
  
- ###Router 2
+ ### Router 2
  
  ethLan: 172.17.200.1 255.255.252.0
  
@@ -61,13 +61,13 @@ Organizacja planuje rozpoczęcie działalności w 3 budynkach, w każdym z nich 
  
  
  
- ##LAN3
+ ## LAN3
  
  172.17.12.0/22 
  
  255.255.252.0
  
- ###Router 3
+ ### Router 3
  
  ethLan: 172.17.12.1 255.255.252.0
  
