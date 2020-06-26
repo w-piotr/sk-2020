@@ -31,13 +31,13 @@ Projekt sieci spełnił oczekiwania, organizacja po uwzględnieniu nowych wymog�
  
 
 
-### Dokumentacja
+# Dokumentacja
 
 ## LAN 1
 
 172.17.156.0/22 255.255.252.0
 
-# Router 1
+### Router 1
 
 ethLan: 172.17.156.1 255.255.252.0
 
@@ -55,7 +55,7 @@ Dest|gateway
 
 172.17.200.0/22 255.255.252.0
 
-# Router 2
+### Router 2
 
 ethLan: 172.17.200.1 255.255.255.0
 
@@ -84,7 +84,7 @@ Dest|gateway
 
 172.17.12.0/22 255.255.252.0
 
-# Router 3
+### Router 3
 
 ethLan: 172.17.12.1 255.255.255.0
 
