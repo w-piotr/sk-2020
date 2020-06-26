@@ -18,16 +18,24 @@ Organizacja planuje rozpoczęcie działalności w 3 budynkach, w każdym z nich 
  Dokumentacja:
  
  LAN 1
+ 
  172.17.156.0/22
+ 
  255.255.252.0
+ 
  Router 1
+ 
  ethLan: 172.17.156.1 255.255.252.0
+ 
  ethR1-R2: 10.10.10.1 255.255.255.252
+ 
  ethR1-R3: 10.10.10.5 255.255.255.252
+ 
  ----------Routing table----------
- Dest            |     gateway
- 172.17.200.0/22 |     10.10.10.2 
- 172.17.12.0/22  |     10.10.10.6
+ Dest|gateway
+ ----|-------
+ 172.17.200.0/22|10.10.10.2 
+ 172.17.12.0/22|10.10.10.6
  
  
  LAN 2
@@ -45,7 +53,9 @@ Organizacja planuje rozpoczęcie działalności w 3 budynkach, w każdym z nich 
  
  
  LAN3
- 172.17.12.0/22 255.255.252.0
+ 172.17.12.0/22 
+ 
+ 255.255.252.0
  Router 3
  ethLan: 172.17.12.1 255.255.252.0
  ethR3-R1: 10.10.10.6 255.255.255.252
