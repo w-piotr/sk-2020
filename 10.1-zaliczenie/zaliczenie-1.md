@@ -33,3 +33,46 @@ W sieci pracują komputery biurowe oraz urządzenia siecowe współdzielące zas
     4. Konfiguracja interfejsów sieciowych
     5. Inne jeżeli wykorzystane
 
+
+# Dokumentacja
+
+ Adres sieci
+
+ 172.17.200.0/22
+
+ 255.255.252.0
+
+ Adres publiczny 
+
+ 62.179.4.200
+
+ Brama
+
+ 62.179.4.201
+
+ Zakres adresów prywatnych
+
+ 172.17.200.10 - 172.17.203.254
+
+ Adres przypisany do erp.mojaorganizacja.pl - 172.17.200.4
+
+ Adres przypisany do drukarka.mojaorganizacja.pl - 172.17.200.3
+
+ Adres przypisany do router.mojaorganizacja.pl - 172.17.200.1
+
+
+ ## Użyte programy
+
+ - dhcp - dodatkowo konfiguracja dhcpd.conf
+ - dnsmasq
+ - translacja ustawiona w /etc/hosts/
+ - ustawiona opcja net.ipv4.up_forward na 1
+ - iptables - uruchomione -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+
+Zrzut ekranu z konfiguracją:
+
+![konfiguracja](konfiguracja.jpg)
+
+
+
